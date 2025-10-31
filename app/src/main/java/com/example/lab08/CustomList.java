@@ -21,4 +21,19 @@ public class CustomList {
     public boolean hasCity(City city) {
         return cities.contains(city);
     }
+
+    // implementing deleteCity for Participation Exercise
+    /**
+     * this method deletes the city from the list
+     * @param city
+     *      a city string to be referenced for deletion
+     *  note: this code was borrowed from my own Lab 6 exercise
+     */
+    public void delete(City city) {
+        if (cities.contains(city)) {
+            cities.remove(city);
+        } else {
+            throw new IllegalArgumentException();
+        }
+    }
 }
