@@ -14,4 +14,15 @@ public class CustomListTest {
 // This will fail initially because hasCity() doesn't exist
         assertTrue(list.hasCity(calgary));
     }
+
+    @Test
+    public void testDeleteCity(){
+        CustomList cityList = new CustomList();
+        City city = new City("Vancouver","BC");
+        cityList.addCity(city);
+
+        // Delete and assert that city is not in the list, then check cityList's size
+        cityList.delete(city);
+        assertFalse(cityList.hasCity(city));
+    }
 }
