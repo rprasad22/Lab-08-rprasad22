@@ -31,6 +31,9 @@ public class CustomListTest {
         CustomList cityList = new CustomList();
         City calgary = new City("Calgary", "AB");
         cityList.addCity(calgary);
+        // add vancouver as second city to test for 2 cities counted in the list
+        City vancouver = new City("Vancouver", "BC");
+        cityList.addCity(vancouver);
         assertEquals(2, cityList.countCities());
     }
 }

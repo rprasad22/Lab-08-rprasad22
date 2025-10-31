@@ -36,4 +36,14 @@ public class CustomList {
             throw new IllegalArgumentException();
         }
     }
+
+    /**
+     * This method checks the total count of cities in the list
+     * @return
+     *      Returns how many cities are in the list
+     */
+    public int countCities() {
+        return cities.size();
+    }
+
 }
