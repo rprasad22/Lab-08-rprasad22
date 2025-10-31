@@ -7,6 +7,7 @@
 
 ## References and Resources
 
+Lab 6 code used as reference (from myself)
 
 ## Verbal Collaboration
 
